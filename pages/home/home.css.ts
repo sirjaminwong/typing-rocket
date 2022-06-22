@@ -1,6 +1,9 @@
 import { fontFace, keyframes, style } from '@vanilla-extract/css';
 import { sprinkles } from '../../styles/sprinkles.css';
 
+import { styleVariants } from '@vanilla-extract/css';
+import { vars } from '../../styles/theme.css';
+
 export const left = sprinkles({
   display: 'flex',
   flexDirection: 'column',
@@ -15,9 +18,6 @@ export const lessonItem = style({
   color: vars.colors.primary,
 });
 
-
-import { styleVariants } from '@vanilla-extract/css';
-import { vars } from '../../styles/theme.css';
 
 export const variant = styleVariants({
   primary: { background: 'blue' },
