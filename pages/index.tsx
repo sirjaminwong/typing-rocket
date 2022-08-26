@@ -10,8 +10,8 @@ const Home: NextPage = () => {
         {lessons.map((lesson) => (
           <Link key={lesson} href={`/lesson/${lesson}`}>
             <a className={styles.lessonItem}>{lesson}</a>
-          </Link>
-        ))}
+        </Link>
+      ))}
     </div>
   );
 };
